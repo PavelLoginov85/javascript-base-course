@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+        const products = [
+        {
+                    id: 3,
+                    price: 200,
+                    },
+                    {
+                    id: 4,
+                    price: 900,
+                    },
+                    {
+                   id: 1,
+                    price: 1000,
+                    },
+                    ];  
+           // не понимаю в чём ошибка, считает только одну цену.
+        products.forEach(function(price){
+            let newPrice = (products[0].price * 85)/100; 
+            if(newPrice < price){
+                price = newPrice;
+            }
+            
+            console.log(newPrice);           
+        });
+      
+
+        
+        
+    </script>
+</body>
+</html>
