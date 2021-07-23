@@ -1,1 +1,1 @@
-# javascript-base-course
+# javascript-advanced
